@@ -1,0 +1,26 @@
+{
+  "name": "prj0004elc-appautoupdater",
+  "version": "1.0.0",
+  "description": "Electron App Auto Updater",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "electron .",
+	"build": "electron-builder build  --win --publish never",
+	"deploy": "electron-builder build  --win --publish always"
+
+  },
+  "author": "Muhammad Habib",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.0"
+  }
+  "repository": {
+	  "type" : "git",
+	  "url" : "https://github.com/mhabib555/electronAppAutoUpdater.git"
+	},
+}
